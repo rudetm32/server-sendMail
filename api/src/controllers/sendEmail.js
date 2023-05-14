@@ -1,13 +1,21 @@
 import dotenv from 'dotenv';
-dotenv.config();
+import { createTransport } from 'nodemailer';
 
-export const getSendEmail=(req, res)=>{
-res.send("hola")
+
+dotenv.config
+
+
+export const getSendEmail = async( req, res )=>{
+    const { email } = req.body
+    try {
+        res.render("pagos")
+    } catch (error) {
+        res.status(400).json({mensaje: error.message})   
+    }
 }
-
 // import { createTransport } from "nodemailer";
 
-// import { renderFile } from "ejs";
+
 
 // const { EMAIL_ADRESS, EMAIL_PASSWORD } =  process.env;
 

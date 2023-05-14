@@ -2,8 +2,10 @@ import { Router } from "express"
 
 import  { getSendEmail } from "../controllers/sendEmail.js"
 
+
 const routes = Router();
 
-routes.get("/", getSendEmail )
+routes.get("/", getSendEmail);
 
-export default routes
+
+export default routes;
