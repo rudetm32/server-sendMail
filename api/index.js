@@ -1,10 +1,12 @@
-import app from "./app.js"
-import dotenv from "dotenv"
-dotenv.config()
+import app from "./app.js";
+import dotenv from "dotenv";
 
-const PORT = process.env.PORT
+dotenv.config();
 
-app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`)
-})
+
+const PORT = process.env.PORT;
+
+const  server = app.listen(PORT, () => {
     
+    console.log('Server running on %s', server.address().port );
+});

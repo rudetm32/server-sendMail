@@ -1,9 +1,10 @@
-import { Router } from "express"
+import { Router } from "express";
 
-import  { getSendEmail } from "../controllers/sendEmail.js"
+import  { getSendEmail } from "../controllers/sendEmail.js";
 
 
 const routes = Router();
+
 
 routes.get("/", getSendEmail);
 

@@ -5,6 +5,7 @@ import sendEmailRoutes from './SendMailRoute.js';
 
 const routes = Router();
 
+
 routes.use('/send', sendEmailRoutes);
 
 
