@@ -1,12 +1,12 @@
 import { Router } from "express";
 
-import  { getSendEmail } from "../controllers/sendController.js";
+import  { postWelcome} from "../controllers/sendController.js";
 
 
 const routes = Router();
 
 
-routes.post("/", getSendEmail);
+routes.post("/", postWelcome);
 
 
 export default routes;
