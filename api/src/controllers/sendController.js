@@ -14,7 +14,7 @@ const {
 
 export const postNotify = ( req, res ) => {
     const { email, adress, name, option  } = req.body;
-    let template = fs.readFileSync(`./views/base.ejs`, 'utf8');
+    let template = fs.readFileSync(`./views/index.ejs`, 'utf8');
     let messageHtml;
     let subject;
     let body;

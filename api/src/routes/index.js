@@ -1,12 +1,12 @@
 import { Router } from 'express';
 
-import sendEmailRoutes from './sendRoute.js';
+import sendRoute from './sendRoute.js';
 
 
 const routes = Router();
 
 
-routes.use('/send', sendEmailRoutes);
+routes.use('/send', sendRoute);
 
 
 export default routes;
