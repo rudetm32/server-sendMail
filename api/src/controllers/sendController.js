@@ -13,7 +13,7 @@ const {
 
 
 export const postNotify = ( req, res ) => {
-    const { email, adress, name, option  } = req.body;
+    const { email, address, name, option  } = req.body;
     let template = fs.readFileSync(`./views/index.ejs`, 'utf8');
     let messageHtml;
     let subject;
@@ -25,7 +25,7 @@ export const postNotify = ( req, res ) => {
         if( !emailvalidator.validate(email) ) return res.status(409).json("Ingrese un correo electrónico en formato válido")
         if( !name) return res.status(409).json('Debe ingresar un nombre')
         
-        if(name && email && adress){
+        if(name   && email){
             title = "Bienvenido(a)"
             subject = "Registro exitoso";
             body = 'Gracias por registrarte en nuestra Web';
@@ -36,7 +36,7 @@ export const postNotify = ( req, res ) => {
                 title
             });    
         }
-        if( !adress ) {
+        if( !address) {
             title = "Le informamos,"
             subject = "Fallo al registrar"
             body = "No fue posible realizar su registro. Por favor revise su información."
