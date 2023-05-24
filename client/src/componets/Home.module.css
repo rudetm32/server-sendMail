@@ -1,0 +1,16 @@
+.conteiner{
+    margin-top: 1em;
+    padding-top: .5em;
+    padding-left: .7em;
+    background-color: rgba(34, 160, 160, 0.322);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   border-radius: .5em;
+    height: 360px;
+    width: 250px;
+   
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    
+}
