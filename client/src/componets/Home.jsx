@@ -1,17 +1,15 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Swal from "sweetalert2";
 import TextField from '@mui/material/TextField'
 import { Button } from '@mui/material';
 
+import Swal from "sweetalert2";
 import style from "./Home.module.css"
 
 export default function Home() {
 
-  const { register, reset, formState : { errors, isSubmitSuccessful }, handleSubmit } =  useForm({
-  defaultValues :{}
-});
+  const { register, reset, formState : { errors, isSubmitSuccessful }, handleSubmit } =  useForm();
 
 useEffect(() => {
   if (isSubmitSuccessful) { 
@@ -55,7 +53,7 @@ return(
         sx={{
           '& .MuiTextField-root': { m: 1, width: '25ch' },
           }} onSubmit= { handleSubmit(onSubmit) } >
-            <div><h3 >Formulario de Registro</h3></div>
+            <div><h3 >Registro Bastet</h3></div>
             
             <div >
               <TextField
@@ -90,7 +88,7 @@ return(
             </div>
             <br />
             <div>
-              <Button  type="submit" variant="contained" color="success">
+              <Button  type="submit" variant="contained" color="primary">
                 Enviar
               </Button>
             </div>

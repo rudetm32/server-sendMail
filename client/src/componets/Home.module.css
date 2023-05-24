@@ -1,10 +1,10 @@
 .conteiner{
-    margin-top: 1em;
     padding-top: .5em;
     padding-left: .7em;
-    background-color: rgba(34, 160, 160, 0.322);
+    background-color: rgba(157, 175, 175, 0.678);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   border-radius: .5em;
+    border: 1px solid cornflowerblue;
+    border-bottom-left-radius: 80px;
     height: 360px;
     width: 250px;
    
@@ -12,5 +12,9 @@
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+    text-decoration: none;
     
+}
+.link{
+text-decoration: none;
 }

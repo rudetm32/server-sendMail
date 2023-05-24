@@ -11,14 +11,14 @@ import LinkIcon from '@mui/icons-material/Link';
 export default function NavBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar variant="dense">
-          <IconButton edge="end" color="secondary" aria-label="menu" sx={{ mr: 2 }}>
+          <IconButton edge="start" color="secondary" aria-label="menu" sx={{ mr: 2 }}>
           <Link to="/notificacion" >
             <LinkIcon  fontSize="large"/>
           </Link>
           </IconButton>
-          <Typography variant="h5" color="inherit" component="div">
+          <Typography variant="h6" color="inherit" component="div">
             Zona admin
           </Typography>
         </Toolbar>
