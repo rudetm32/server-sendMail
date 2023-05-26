@@ -16,7 +16,7 @@ const notifyObject = [
 
 export default function Notify() {
   
-  const { register, reset, formState : { errors, isSubmitSuccessful}, handleSubmit } = useForm();
+  const { register, reset, formState : { isSubmitSuccessful}, handleSubmit } = useForm();
   const navigate =useNavigate()
 
   React.useEffect(()=>{
@@ -25,9 +25,9 @@ export default function Notify() {
     }
   }, [ isSubmitSuccessful, reset ])
 
-  const onSubmit = async(data) => {
+  const onSubmit = (data) => {
    
-   await axios
+   axios
    .post("http://localhost:3001/send", data)
    .then((data) => {
     if (data) {

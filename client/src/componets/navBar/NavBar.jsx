@@ -14,7 +14,7 @@ export default function NavBar() {
       <AppBar position="sticky">
         <Toolbar variant="dense">
           <IconButton edge="start" color="secondary" aria-label="menu" sx={{ mr: 2 }}>
-          <Link to="/notificacion" >
+          <Link to="/notify" >
             <LinkIcon  fontSize="large"/>
           </Link>
           </IconButton>
