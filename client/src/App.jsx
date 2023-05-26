@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+   
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/notify' element={<Notify/>}></Route>
