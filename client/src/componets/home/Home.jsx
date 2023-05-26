@@ -29,7 +29,6 @@ const onSubmit = (data) => {
      showConfirmButton : false,
      timer: 1500
    })}
-   navigate("/")
  })
  .catch((error) => {
    Swal.fire({
